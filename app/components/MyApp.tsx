@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { sampleMap } from '../data/sample-map';
 import { GPS } from '../interfaces/map';
 import { douglasPeucker } from '../utils/douglasPeucker';
 import { bezierCurveSmoothing, catmullRomSpline } from '../utils/smoothCurve';
@@ -20,11 +21,7 @@ const MyApp = () => {
 	const { register, handleSubmit, watch } = useForm<Inputs>({
 		defaultValues: {
 			epsilon: 0.0001,
-			originalMap: JSON.stringify([
-				{ latitude: 51.505, longitude: -0.09 },
-				{ latitude: 51.515, longitude: -0.1 },
-				{ latitude: 51.525, longitude: -0.11 }
-			])
+			originalMap: JSON.stringify(sampleMap)
 		}
 	});
 
