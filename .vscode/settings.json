@@ -1,0 +1,10 @@
+{
+	"cSpell.words": ["Beizer", "catmull", "Peucker"],
+	"cSpell.ignoreRegExpList": ["(^|[^ก-๙])([ก-๙]+)"],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.tabSize": 2,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit"
+	}
+}
